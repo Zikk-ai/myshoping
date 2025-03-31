@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-left">
+            <div class="search">
+                <input type="text" placeholder="Поиск товара..." />
+            </div>
+
+            <div class="cart">
+                <a href="cart.html">
+                    <img src="https://avatars.mds.yandex.net/i?id=c98c74577aa704e339c5922a196f08fd36d26efd-5280171-images-thumbs&n=13" alt="Корзина" />
+                    <span id="cart-count">0 товаров</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="https://avatars.mds.yandex.net/i?id=920792b4db9f5bd371e807ad82d41d615ae14a3f-10636720-images-thumbs&n=13" alt="Логотип">
+        </div>
+
+        <div class="auth">
+            <a href="login.html">Войти</a> | <a href="login.html">Регистрация</a>
+        </div>
+    </header>
+    
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#categories">Категории</a></li>
+            <li><a href="#discounts">Скидки</a></li>
+            <li><a href="#products">Товары</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Секция скидок -->
+    <section id="discounts" class="discounts">
+        <h2>🔥 Горящие скидки</h2>
+        <div class="discount-list">
+            <div class="discount-item">Скидка 20% на электронику</div>
+            <div class="discount-item">Скидка 15% на одежду</div>
+            <div class="discount-item">Распродажа книг - до 30%</div>
+        </div>
+    </section>
+    
+    <!-- Категории товаров -->
+    <section id="categories" class="categories">
+        <h2>Категории</h2>
+        <div class="category-list">
+            <a href="#electronics" class="category">📱 Электроника</a>
+            <a href="#clothing" class="category">👕 Одежда</a>
+            <a href="#toys" class="category">🧸 Игрушки</a>
+            <a href="#books" class="category">📚 Книги</a>
+        </div>
+    </section>
+    
+    <!-- Популярные товары -->
+    <main>
+        <section id="products" class="products">
+            <h2>Популярные товары</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product1.jpg" alt="Товар 1">
+                    <h3>Телевизор LG 50"</h3>
+                    <p class="old-price">40 000 руб.</p>
+                    <p class="new-price">32 000 руб.</p>
+                    <button onclick="addToCart(1, 'Телевизор LG 50', 32000)">🛒 В корзину</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Товар 2">
+                    <h3>Смартфон Samsung</h3>
+                    <p class="old-price">15 000 руб.</p>
+                    <p class="new-price">12 750 руб.</p>
+                    <button onclick="addToCart(2, 'Смартфон Samsung', 12750)">🛒 В корзину</button>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Товар 3">
+                    <h3>Смартфон iPhone</h3>
+                    <p class="old-price">20 000 руб.</p>
+                    <p class="new-price">18 000 руб.</p>
+                    <button onclick="addToCart(3, 'Смартфон iPhone', 18000)">🛒 В корзину</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Подвал -->
+    <footer id="contacts">
+        <p>📞 Контакты: +7 (900) 123-45-67</p>
+        <p>📧 Email: support@shop.com</p>
+        <p>© 2025 Интернет-магазин. Все права защищены.</p>
+    </footer>
+</body>
+</html>
