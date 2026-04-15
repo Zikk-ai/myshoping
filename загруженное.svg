@@ -1,0 +1,5 @@
+<svg class="heart" viewBox="0 0 32 29.6" xmlns="http://www.w3.org/2000/svg" onclick="openMessage()">
+  <path fill="red" d="M23.6,0c-3.4,0-6.4,2.1-7.6,5.1C14.8,2.1,11.8,0,8.4,0
+  C3.8,0,0,3.8,0,8.4c0,9.4,16,21.2,16,21.2s16-11.8,16-21.2
+  C32,3.8,28.2,0,23.6,0z"></path>
+</svg>
